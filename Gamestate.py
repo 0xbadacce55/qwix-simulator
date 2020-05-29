@@ -3,8 +3,7 @@ import Constants
 
 class Gamestate:
     def __init__(self, players):
-        self.dice = []
-        self.dice.append(Dice(Constants.WHITE)).append(Dice(Constants.WHITE)).append(Dice(Constants.RED)).append(Dice(Constants.BLUE)).append(Dice(Constants.GREEN)).append(Dice(Constants.YELLOW))
+        self.dice = [Dice(Constants.RED), Dice(Constants.YELLOW), Dice(Constants.GREEN), Dice(Constants.BLUE), Dice(Constants.WHITE1), Dice(Constants.WHITE2)]
         self.players = players
         self.playerTurnIndex = 0
         self.gameOver = False
