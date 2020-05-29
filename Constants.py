@@ -1,5 +1,5 @@
-WHITE = 0
-RED = 1
-BLUE = 2
-GREEN = 3
-BLUE = 4
+RED = 0
+YELLOW = 1
+GREEN = 2
+BLUE = 3
+WHITE = 4
