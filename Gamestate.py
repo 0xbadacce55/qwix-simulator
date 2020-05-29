@@ -5,17 +5,17 @@ class Gamestate:
     def __init__(self, players):
         self.dice = [Dice(Constants.RED), Dice(Constants.YELLOW), Dice(Constants.GREEN), Dice(Constants.BLUE), Dice(Constants.WHITE1), Dice(Constants.WHITE2)]
         self.players = players
-        self.playerTurnIndex = 0
-        self.gameOver = False
+        self.player_turn_index = 0
+        self.game_over = False
 
-    def executeTurn(self) -> bool:
-        self.determineGameOver
-        if(self.gameOver):
+    def execute_turn(self) -> bool:
+        self.determine_game_over
+        if(self.game_over):
             return False
         for dice in self.dice:
             dice.roll
         # for every player, execute their turn
         return True
 
-    def determineGameOver(self):
-        self.gameOver = True
+    def determine_game_over(self):
+        self.game_over = True
